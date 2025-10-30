@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finds by Moosa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+      color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      padding: 40px 25px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px auto 20px;
+      box-shadow: 0 4px 15px rgba(59,130,246,0.3);
+      transition: 0.4s ease;
+      transform: translateY(10px);
+    }
+    .avatar:hover {
+      transform: scale(1.05) translateY(10px);
+      box-shadow: 0 0 25px rgba(59,130,246,0.6);
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 75%; /* moves image down slightly */
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p.bio {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .link-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #f9fafb;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .link-card:hover {
+      background: rgba(59,130,246,0.15);
+      box-shadow: 0 0 12px rgba(59,130,246,0.4);
+      transform: translateY(-3px);
+    }
+    .link-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: contain;        /* keeps product fully visible */
+  background: #fff;           /* clean white background behind transparent areas */
+  margin-right: 15px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.2)); /* soft glow */
+  transition: transform 0.3s ease;
+}
+.link-card:hover img {
+  transform: scale(1.07);
+}
+
+    .link-card span {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <img id="avatar-img" src="sample-pfp.jpg" alt="Moosa Avatar">
+    </div>
+    <h1>Finds by Moosa</h1>
+    <p class="bio">Amazon finds worth your money 💰<br>Useful • Aesthetic • Verified by Moosa<br>👇 Shop my picks below</p>
+
+    <a href="https://www.amazon.ca/Jamieson-Vitamin-B2-100mg-Riboflavin/dp/B00CP7Q2SA?pd_rd_w=3P5To&content-id=amzn1.sym.c47947bc-7e2a-4661-bdbb-a33c3a17e598&pf_rd_p=c47947bc-7e2a-4661-bdbb-a33c3a17e598&pf_rd_r=CQGW4MZRB6PZAWM1GN3X&pd_rd_wg=QircY&pd_rd_r=fba01c5d-e786-412a-ab6b-8964e80feda2&pd_rd_i=B00CP7Q2SA&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_pr_pd_hp_d_atf_rp_2_t" class="link-card" target="_blank">
+      <img src="https://m.media-amazon.com/images/I/7107gQMvBvL._AC_SX425_.jpg" alt="Product">
+      <span>🔥 Wireless Earbuds – Noise Cancelling</span>
+    </a>
+
+    <a href="https://www.amazon.ca/dp/B0C5V9GQLM" class="link-card" target="_blank">
+      <img src="https://m.media-amazon.com/images/I/71xLRb8dU8L._AC_SL1500_.jpg" alt="Product">
+      <span>💡 LED Desk Lamp – Modern & Minimal</span>
+    </a>
+  </div>
+</body>
+</html>
